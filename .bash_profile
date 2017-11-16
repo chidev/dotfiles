@@ -1,5 +1,6 @@
-if [ -f ./.bash_banner ]; then
-  cat ./.bash_banner
+export DOTFILES=~/dotfiles
+if [ -f "$DOTFILES/.bash_banner" ]; then
+  cat "$DOTFILES/.bash_banner"
 else
   echo 'Banner is missing, add a ~/dotfiles/.bash_banner'
 fi
@@ -8,17 +9,19 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
 
-if [ -f ./.bash_aliases ]; then
-  . ./.bash_aliases
+if [ -f "$DOTFILES/.bash_aliases" ]; then
+  . "$DOTFILES/.bash_aliases"
 else
   echo 'Aliases are missing, add a ~/dotfiles/.bash_aliases'
 fi
 
-if [ -f ./.bash_prompt ]; then
-  . ./.bash_prompt
+if [ -f "$DOTFILES/.bash_prompt" ]; then
+  . "$DOTFILES/.bash_prompt"
 else
-  echo 'Propt styling is missing, add a ~/dotfiles/.bash_prompt'
+  echo 'Prompt styling is missing, add a ~/dotfiles/.bash_prompt'
 fi
+
+echo "$DOTFILES/.bash_prompt"
 
 #   Set Paths
 #   ------------------------------------------------------------
