@@ -34,7 +34,7 @@ fi
 # - yarn global add jshint nodemon pm2 react-docgen sails typescript webpack webpack-dashboard yo create-react-app gulp-cli firebase-tools serve concurrently pkg
 
 
-
+set completion-ignore-case On
 
 
 #   Set Paths
