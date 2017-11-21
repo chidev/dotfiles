@@ -21,17 +21,35 @@ else
   echo 'Prompt styling is missing, add a ~/dotfiles/.bash_prompt'
 fi
 
-echo "$DOTFILES/.bash_prompt"
+# TODO:
+# auto installs:
+#
+# Ansible:
+# - sudo easy_install pip && sudo pip install ansible
+#
+# Manual (need to search):
+# Yarn
+# NVM
+# - nvm install lts/* && nvm use lts/*
+# - yarn global add jshint nodemon pm2 react-docgen sails typescript webpack webpack-dashboard yo create-react-app gulp-cli firebase-tools serve concurrently pkg
+
+
+
+
 
 #   Set Paths
 #   ------------------------------------------------------------
 export PATH="/usr/bin:/usr/local/bin/:$PATH"
-
 export PATH="/usr/local/git/bin:/sw/bin/:/usr/local/bin:/usr/local/:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
 export PATH="/Users/jpsss/mongo/bin:$PATH"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+#   NVM
+#   ------------------------------------------------------------
+nvm use lts/*
+xcode-select --switch /Applications/Xcode.app/Contents/Developer
 
 #   Set Default Editor (change 'Nano' to the editor of your choice)
 #   ------------------------------------------------------------
