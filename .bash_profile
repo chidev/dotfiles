@@ -21,6 +21,7 @@ else
   echo 'Prompt styling is missing, add a ~/dotfiles/.bash_prompt'
 fi
 
+
 # TODO:
 # auto installs:
 #
@@ -48,8 +49,8 @@ export NVM_DIR="$HOME/.nvm"
 
 #   NVM
 #   ------------------------------------------------------------
-nvm use lts/*
-xcode-select --switch /Applications/Xcode.app/Contents/Developer
+#nvm use lts/*
+#xcode-select --switch /Applications/Xcode.app/Contents/Developer
 
 #   Set Default Editor (change 'Nano' to the editor of your choice)
 #   ------------------------------------------------------------
@@ -65,4 +66,4 @@ export BLOCKSIZE=1k
 #   from http://osxdaily.com/2012/02/21/add-color-to-the-terminal-in-mac-os-x/
 #   ------------------------------------------------------------
 export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagaced
+export LSCOLORS=ExFxBxDxCxegedabagacad

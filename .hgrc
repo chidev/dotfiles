@@ -1,7 +1,6 @@
 # example user config (see 'hg help config' for more info)
 [ui]
 # name and email, e.g.
-# username = Jane Doe <jdoe@example.com>
 username = JP <chicagowebdev@gmail.com>
 
 # uncomment to disable color in command output
@@ -17,3 +16,4 @@ username = JP <chicagowebdev@gmail.com>
 # (see 'hg help extensions' for more info)
 #
 # churn =
+graphlog =
