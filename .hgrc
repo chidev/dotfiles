@@ -2,6 +2,7 @@
 [ui]
 # name and email, e.g.
 username = JP <chicagowebdev@gmail.com>
+ignore = ~/.hgignore
 
 # uncomment to disable color in command output
 # (see 'hg help color' for details)

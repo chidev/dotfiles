@@ -42,4 +42,6 @@ hg() {
     command hg "$@"
   fi
 }
-alias lrn='learnyounode'
+alias sac='stream-adventure'
+alias sar='stream-adventure run'
+alias sav='stream-adventure verify'

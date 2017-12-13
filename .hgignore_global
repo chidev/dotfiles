@@ -1,7 +1,0 @@
-.DS_Store
-
-syntax: glob
-
-*~
-node_modules
-bower_modules
